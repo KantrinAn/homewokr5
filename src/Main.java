@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -27,13 +26,12 @@ public class Main {
         int playerFourT = scanner.nextInt();
         System.out.println("Вкажіть кількість фрагів п'ятого гравця другої команди");
         int playerFiveT = scanner.nextInt();
-        int resultTeamOne = (playerOneO + playerTwoO + playerThreeO + playerFourO + playerFiveO) / 5 ;
+        int resultTeamOne = (playerOneO + playerTwoO + playerThreeO + playerFourO + playerFiveO) / 5;
         int resultTeamTwo = (playerOneT + playerTwoT + playerThreeT + playerFourT + playerFiveT) / 5;
         if (resultTeamOne > resultTeamTwo) {
             System.out.println("Перемогла команда " + nameTeamOne + " набрала " + resultTeamOne + " очків");
         }  else if (resultTeamOne < resultTeamTwo) {
             System.out.println("Перемогла команда " + nameTeamTwo + " набрала " + resultTeamTwo + " очків");
-
         }
     }
 }
